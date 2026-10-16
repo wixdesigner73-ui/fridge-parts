@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fridge Parts – Find your refrigerator part</title>
+  <meta name="description" content="Find used OEM refrigerator parts by brand, model number or part number." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#app">Skip to content</a>
+  <header class="top">
+    <div class="wrap bar">
+      <a class="logo" href="#/" aria-label="Fridge Parts home"><span>🧊</span> Fridge Parts</a>
+      <form id="headerForm" class="search" role="search" autocomplete="off">
+        <label class="sr" for="headerSearch">Search parts</label>
+        <input id="headerSearch" type="search" placeholder="Search part #, part name or model…" />
+        <div id="suggest" class="suggest" hidden></div>
+      </form>
+      <nav class="nav" aria-label="Main">
+        <a href="#/">Shop</a>
+        <a href="#/orders">My orders</a>
+        <a href="#/cart" class="cart-link">🛒 Cart <span id="cartBadge" class="count" hidden>0</span></a>
+        <button id="themeBtn" class="icon-btn" type="button" aria-label="Toggle dark mode">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="wrap" tabindex="-1"></main>
+
+  <footer class="foot">
+    <div class="wrap">Used OEM refrigerator parts · Part numbers and fitment come from our inventory records — please confirm your model number before ordering.</div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
